@@ -12,6 +12,8 @@ onos: prototype of decision maker based on the ONOS controller, draft of the glo
 # Clone and install
 For Global view, you are supposed to install mongoDB in your computer first and using $./mongod to run database first
 
+$ git clone git@github.com:JpKuo24/sdc.git
+
 $ cd sdc/globalview
 
 $./Manager.py
