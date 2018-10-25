@@ -1,10 +1,11 @@
 #  Representation of a infrastructure device, which is internal node in the graph
 class Device(object):
-    def __init__(self,ssid, state, devicetype, heartbeat):
+    def __init__(self,ssid, state, devicetype, heartbeat,cyclingtime):
         self._deviceId = ssid
         self._state = state
         self._deviceType = devicetype
         self._heartbeat = heartbeat
+        self._cyclingTime = cyclingtime
 
     def get_deviceid(self):
         return self._deviceId
@@ -17,6 +18,9 @@ class Device(object):
 
     def get_state(self):
         return self._state
+    
+    def get_cyclingtime(self)
+        return self._cyclingTime
 
     def set_deviceid(self, deviceid):
         self._deviceId = deviceid
@@ -26,6 +30,9 @@ class Device(object):
 
     def set_state(self, state):
         self._state = state
+        
+    def set_cyclingtime(self):
+        return self._cyclingTime = cyclingtime   
 
 
 class Stopper(Device):
@@ -34,7 +41,7 @@ class Stopper(Device):
 
 
 class Robot(Device):
-    def __init__(self,ssid, state, heartbeat, program):
-        super(Robot, self).__init__(ssid, state, 'Robot', heartbeat)
+    def __init__(self,ssid, state, heartbeat, cyclingtime, program):
+        super(Robot, self).__init__(ssid, state, 'Robot', heartbeat, cyclingtime)
         self._program = program
 
