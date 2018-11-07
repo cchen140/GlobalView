@@ -12,8 +12,8 @@ Net_Nodes = []
 connectdict = {}
 splitword = ':'
 cachedict = {}
-filename = '/Users/guojunpeng/net/net.txt'
-datafilename = '/Users/guojunpeng/net/data.txt'
+filename = 'net.txt'
+datafilename = 'data.txt'
 
 
 file1 = open(filename, 'r')  # 以读取方式打开文件
