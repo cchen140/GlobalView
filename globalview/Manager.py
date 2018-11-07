@@ -23,8 +23,8 @@ connectdict = {}  # Store all the connection relationship, key is the current no
 splitword = ':'
 cachedict = {}  # Store all connection relationships of the error component
 cncdict = {}  # Store all the CNCs in the plant, key is ssid, value is the cnc class
-originfilename = '/Users/guojunpeng/net/net.txt'
-filename = '/Users/guojunpeng/net/update/net.txt'
+originfilename = 'net.txt'
+filename = 'update_net.txt'
 
 G = nx.DiGraph()
 
