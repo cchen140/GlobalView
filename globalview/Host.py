@@ -58,7 +58,7 @@ class Cnc(Host):
     def set_drivelist(self,drivelist):
         self._driveList = drivelist
     
-    def set_cyclingtime(self, cyclingtime)
+    def set_cyclingtime(self, cyclingtime):
         self._cyclingTime = cyclingtime
 
 
