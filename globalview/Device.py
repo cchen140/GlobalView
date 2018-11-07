@@ -19,7 +19,7 @@ class Device(object):
     def get_state(self):
         return self._state
     
-    def get_cyclingtime(self)
+    def get_cyclingtime(self):
         return self._cyclingTime
 
     def set_deviceid(self, deviceid):
@@ -31,8 +31,8 @@ class Device(object):
     def set_state(self, state):
         self._state = state
         
-    def set_cyclingtime(self):
-        return self._cyclingTime = cyclingtime   
+    def set_cyclingtime(self, cyclingtime):
+        self._cyclingTime = cyclingtime   
 
 
 class Stopper(Device):
